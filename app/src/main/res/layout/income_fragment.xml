@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/TodayIncomeSummary"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="60dp"
+        android:translationZ="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/dop"
+            android:layout_marginTop="10dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="Payment Date"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="false"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/expmethod"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/mop"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="240dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Payment Method"-->
+<!--            android:textColor="@color/colorwhite"-->
+<!--            android:inputType="text"-->
+<!--            android:padding="15dp"/>-->
+
+        <Spinner
+            android:id="@+id/mop"
+            android:layout_marginTop="10dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif"
+            android:popupBackground="@drawable/rounded_white_card_bg"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="false"
+        android:gravity="left">
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/IncomeFrom"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/incomefrom"
+            android:layout_marginTop="10dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/IncomeFrom"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="false"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Description"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_marginTop="10dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Description"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="false"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_marginTop="10dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="false"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/totalamount"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorwhite"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:translationZ="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_marginLeft="13dp"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/input_group"
+        tools:ignore="UnknownId"
+        android:translationZ="20dp">
+
+        <Button
+            android:id="@+id/total"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+
+            android:background="@drawable/loginbutton_shape"
+            android:text="@string/delet"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton_shape"
+            android:text="@string/Add"
+            android:layout_marginRight="23dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/viewdata"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton_shape"
+            android:text="@string/viewdata"
+            android:textAllCaps="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">पैसे वाचवा</string>
+    <string name="email">ईमेल पत्ता</string>
+    <string name="signin">साइन इन करा</string>
+    <string name="signup">साइन अप करा</string>
+    <string name="username">वापरकर्तानाव</string>
+    <string name="password">संकेतशब्द</string>
+    <string name="gotosignpu">खाते नाही? साइन अप करा</string>
+    <string name="forgetpass">संकेतशब्द विसरलात</string>
+    <string name="gotosignin">आधीपासूनच एक खाते आहे? साइन इन करा</string>
+    <string name="Add">जोडा</string>
+    <string name="delet">हटवा</string>
+    <string name="date">व्यवहाराची तारीख</string>
+    <string name="expmethod">व्यवहाराची पद्धत</string>
+    <string name="paidto">पैसे दिले</string>
+    <string name="logout">बाहेर पडणे</string>
+    <string name="todayexp">आज खर्च सारांश</string>
+    <string name="viewdata">व्यवहार पहा</string>
+    <string name="income">उत्पन्न</string>
+    <string name="amount">रक्कम</string>
+    <string name="TOTAL">एकूण</string>
+    <string name="Description">वर्णन</string>
+    <string name="BALANCE">शिल्लक</string>
+    <string name="TodayIncomeSummary">आज उत्पन्न सारांश</string>
+    <string name="IncomeFrom">"  उत्पन्न"</string>
+</resources>
